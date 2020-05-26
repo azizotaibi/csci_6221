@@ -1,4 +1,4 @@
-# daily_feed
+# daily_feeds
 
 A new Flutter project.
 

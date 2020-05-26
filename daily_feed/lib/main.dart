@@ -1,29 +1,21 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
-
+import 'package:daily_feeds/views/homeView.dart';
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-
-@override
+  // This widget is the root of your application.
+  @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    
-    return MaterialApp (
-      title: "Daiy News",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text ("Latest News"),
-          centerTitle: true,
-          backgroundColor: Colors.amber
-        ,),
-      body: Text ("Loading News ..."),
-      )
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: Color.fromARGB(255, 230, 230, 230),
+      ),
+      home: Home(),
     );
-  }  
+  }
+}
 
-
-} 
