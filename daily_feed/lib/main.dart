@@ -1,5 +1,5 @@
+import 'package:daily_feeds/menu.dart';
 import 'package:flutter/material.dart';
-import 'package:daily_feeds/views/homeView.dart';
 void main() {
   runApp(MyApp());
 }
@@ -9,13 +9,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Covid-19 Feeds',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color.fromARGB(255, 230, 230, 230),
       ),
-      home: Home(),
+      home: Menu(),
     );
   }
 }
-
